@@ -1,5 +1,7 @@
-package com.graphqljava.tutorial.bookDetails;
+package com.graphqljava.tutorial.controller;
 
+import com.graphqljava.tutorial.entity.Author;
+import com.graphqljava.tutorial.entity.Book;
 import org.springframework.graphql.data.method.annotation.Argument;
 import org.springframework.graphql.data.method.annotation.QueryMapping;
 import org.springframework.graphql.data.method.annotation.SchemaMapping;
