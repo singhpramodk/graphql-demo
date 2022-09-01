@@ -4,9 +4,9 @@ type Query {
     authorByName(firstName: String): Author
 }
 
-
-
-
+type Mutation {
+    createAuthor(input: CreateAuthorInput!): Author!
+}
 
 
 type Book {
@@ -22,3 +22,10 @@ type Author {
     lastName: String
     book: Book
 }
+
+input CreateAuthorInput {
+       id: ID!
+       firstName: String!
+       lastName: String!
+}
+
